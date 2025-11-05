@@ -527,6 +527,7 @@ name = "dsa103-lifesciencedata"
 version = "0.0.1"
 source = { editable = "." }
 dependencies = [
+    { name = "ipykernel" },
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "ord-schema" },
@@ -543,6 +544,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "ipykernel", specifier = ">=6.30.1" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.9.4" },
     { name = "ord-schema", specifier = ">=0.3.99" },
