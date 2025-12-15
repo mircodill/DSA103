@@ -38,9 +38,9 @@ def compare_setups(df: pd.DataFrame):
     lower_T = best_T_range.loc["temperature_C"] - best_T_range.loc["dT"]
 
     print("-------------------------------------------------------------")
-    print(f"The highest reaction rate ({highest_rate}) was detected in setup {best_row_rates.loc["setup"]}.")
+    print(f'The highest reaction rate ({highest_rate}) was detected in setup {best_row_rates.loc["setup"]}.') #MD: switched f-string to single '...' signs
     print(f"The highest average reaction rate ({average_rate.min()}) was detected in setup {average_rate.idxmin()}.")
     print(f"The highest average yield increase ({average_yieldchange.max()}) was detected in setup {average_yieldchange.idxmax()}.")
-    print(f"The best temperature range was found in setup {best_T_range.loc["setup"]}: between {lower_T} and {upper_T} °C.")
+    print(f'The best temperature range was found in setup {best_T_range.loc["setup"]}: between {lower_T} and {upper_T} °C.') #MD: switched f-string to single '...' signs
     
     return
